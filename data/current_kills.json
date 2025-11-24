@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2025-11-24T20:29:18",
+  "weekStart": "2025-11-24",
+  "weekEnd": "2025-11-30",
+  "note": "No Tuesday export yet. Current week starts when Tuesday 00:00 file exists.",
+  "source": {
+    "listFilesUsed": [],
+    "windowStart": "2025-11-25T00:00",
+    "windowEnd": "2025-12-01T00:05"
+  },
+  "players": []
+}
