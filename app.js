@@ -23,23 +23,27 @@ async function fetchJSON(url){
   return r.json();
 }
 
-function sortPlayers(players, sortKey){
-  const arr = [...players];
-  arr.sort((a,b)=>{
-    if (sortKey === "name"){
-      return (a.name||"").localeCompare(b.name||"");
-    }
-    const va = a[sortKey] ?? 0;
-    const vb = b[sortKey] ?? 0;
-    return vb - va;
-  });
-  return arr;
-}
-
 function filterPlayers(players, q){
   q = (q||"").trim().toLowerCase();
   if(!q) return players;
   return players.filter(p => (p.name||"").toLowerCase().includes(q));
+}
+
+/* Hunt points + goal (your rules) */
+function calcHuntPoints(p){
+  const l2 = Number(p.l2||0);
+  const l3 = Number(p.l3||0);
+  const l4 = Number(p.l4||0);
+  const l5 = Number(p.l5||0);
+  return l2*1 + l3*3 + l4*9 + l5*18;
+}
+function calcGoalPct(points){
+  return points / 50; // 50 points = 100%
+}
+
+function addTopClass(tr, idx){
+  if (idx < 3) tr.classList.add("row-top3");
+  else if (idx < 10) tr.classList.add("row-top10");
 }
 
 /* =========================
@@ -51,6 +55,7 @@ const sections = {
   kills: document.getElementById("tab-kills"),
   fest: document.getElementById("tab-fest"),
   history: document.getElementById("tab-history"),
+  alltime: document.getElementById("tab-alltime"),
 };
 
 tabButtons.forEach(btn=>{
@@ -78,36 +83,56 @@ const refreshGift = document.getElementById("refreshGift");
 const tableWrapGift = document.getElementById("tableWrapGift");
 
 let rawGiftPlayers = [];
-let lastGiftData = null;
+
+function getGiftViewPlayers(){
+  return rawGiftPlayers.map(p=>{
+    const points = calcHuntPoints(p);
+    const goalPct = calcGoalPct(points);
+    return { ...p, _points: points, _goalPct: goalPct };
+  });
+}
+
+function sortGiftPlayers(players, sortKey){
+  const arr = [...players];
+  arr.sort((a,b)=>{
+    if (sortKey === "name") return (a.name||"").localeCompare(b.name||"");
+    if (sortKey === "pointsHunt") return (b._points||0) - (a._points||0);
+    const va = a[sortKey] ?? 0;
+    const vb = b[sortKey] ?? 0;
+    return vb - va;
+  });
+  return arr;
+}
 
 function renderGift(){
   const q = searchGift.value;
   const sk = sortGift.value;
 
-  let players = filterPlayers(rawGiftPlayers, q);
-  players = sortPlayers(players, sk);
+  let players = filterPlayers(getGiftViewPlayers(), q);
+  players = sortGiftPlayers(players, sk);
 
   tbodyGift.innerHTML = "";
   players.forEach((p,i)=>{
     const goalClass =
-      p.goalPctHunt >= 1 ? "goal-good" :
-      p.goalPctHunt >= 0.5 ? "goal-warn" :
+      p._goalPct >= 1 ? "goal-good" :
+      p._goalPct >= 0.5 ? "goal-warn" :
       "goal-bad";
 
     const tr = document.createElement("tr");
+    addTopClass(tr, i);
     tr.innerHTML = `
       <td>${i+1}</td>
       <td class="name">${p.name ?? "-"}</td>
       <td>${fmtNum(p.purchase)}</td>
       <td>${fmtNum(p.hunt)}</td>
-      <td>${fmtNum(p.pointsHunt)}</td>
+      <td>${fmtNum(p._points)}</td>
       <td>${fmtNum(p.l1)}</td>
       <td>${fmtNum(p.l2)}</td>
       <td>${fmtNum(p.l3)}</td>
       <td>${fmtNum(p.l4)}</td>
       <td>${fmtNum(p.l5)}</td>
       <td>${fmtNum(p.total)}</td>
-      <td class="${goalClass}">${fmtPct(p.goalPctHunt)}</td>
+      <td class="${goalClass}">${fmtPct(p._goalPct)}</td>
     `;
     tbodyGift.appendChild(tr);
   });
@@ -122,16 +147,14 @@ async function loadGift(){
 
   try{
     const data = await fetchJSON("data/current.json");
-    lastGiftData = data;
     rawGiftPlayers = data.players || [];
 
     metaGift.textContent = `Week: ${data.weekStart} → ${data.weekEnd}  |  Generated: ${data.generatedAt}`;
     const genTime = new Date(data.generatedAt).getTime();
     staleWarnGift.textContent = `Last update: ${ago(Date.now()-genTime)}${data.note? "  |  " + data.note : ""}`;
 
-    // Subtitle arriba
-    const sub = document.getElementById("subtitle");
-    sub.textContent = `Current week (Tue → Mon): ${data.weekStart} → ${data.weekEnd}`;
+    document.getElementById("subtitle").textContent =
+      `Current week (Tue → Mon): ${data.weekStart} → ${data.weekEnd}`;
 
     renderGift();
   }catch(e){
@@ -160,18 +183,29 @@ const refreshKills = document.getElementById("refreshKills");
 const tableWrapKills = document.getElementById("tableWrapKills");
 
 let rawKillsPlayers = [];
-let lastKillsData = null;
+
+function sortKillsPlayers(players, sortKey){
+  const arr = [...players];
+  arr.sort((a,b)=>{
+    if (sortKey === "name") return (a.name||"").localeCompare(b.name||"");
+    const va = a[sortKey] ?? 0;
+    const vb = b[sortKey] ?? 0;
+    return vb - va;
+  });
+  return arr;
+}
 
 function renderKills(){
   const q = searchKills.value;
   const sk = sortKills.value;
 
   let players = filterPlayers(rawKillsPlayers, q);
-  players = sortPlayers(players, sk);
+  players = sortKillsPlayers(players, sk);
 
   tbodyKills.innerHTML = "";
   players.forEach((p,i)=>{
     const tr = document.createElement("tr");
+    addTopClass(tr, i);
     tr.innerHTML = `
       <td>${i+1}</td>
       <td class="name">${p.name ?? "-"}</td>
@@ -192,7 +226,6 @@ async function loadKills(){
 
   try{
     const data = await fetchJSON("data/current_kills.json");
-    lastKillsData = data;
     rawKillsPlayers = data.players || [];
 
     metaKills.textContent = `Week: ${data.weekStart} → ${data.weekEnd}  |  Generated: ${data.generatedAt}`;
@@ -213,7 +246,7 @@ sortKills.addEventListener("change", renderKills);
 refreshKills.addEventListener("click", loadKills);
 
 /* =========================
-   GUILD FEST
+   GUILD FEST (latest)
    ========================= */
 const tbodyFest = document.getElementById("tbodyFest");
 const loadingFest = document.getElementById("loadingFest");
@@ -227,27 +260,32 @@ const tableWrapFest = document.getElementById("tableWrapFest");
 
 let rawFestPlayers = [];
 
+function sortFestPlayers(players, sortKey){
+  const arr = [...players];
+  arr.sort((a,b)=>{
+    if (sortKey === "name") return (a.name||"").localeCompare(b.name||"");
+    const va = a[sortKey] ?? 0;
+    const vb = b[sortKey] ?? 0;
+    return vb - va;
+  });
+  return arr;
+}
+
 function renderFest(){
   const q = searchFest.value;
   const sk = sortFest.value;
 
   let players = filterPlayers(rawFestPlayers, q);
-  players = sortPlayers(players, sk);
+  players = sortFestPlayers(players, sk);
 
   tbodyFest.innerHTML = "";
   players.forEach((p,i)=>{
-    const gc =
-      p.goalPct >= 1 ? "goal-good" :
-      p.goalPct >= 0.5 ? "goal-warn" :
-      "goal-bad";
-
     const tr = document.createElement("tr");
+    addTopClass(tr, i);
     tr.innerHTML = `
       <td>${i+1}</td>
       <td class="name">${p.name ?? "-"}</td>
       <td>${fmtNum(p.points)}</td>
-      <td>${p.rank ?? "-"}</td>
-      <td class="${gc}">${fmtPct(p.goalPct)}</td>
     `;
     tbodyFest.appendChild(tr);
   });
@@ -302,22 +340,16 @@ const tableWrapHistoryKills = document.getElementById("tableWrapHistoryKills");
 const errorHistoryGift = document.getElementById("errorHistoryGift");
 const errorHistoryKills = document.getElementById("errorHistoryKills");
 
-// Generate last 12 weeks (Tuesday starts)
 function getLastTue(d){
   const x = new Date(d);
   const day = x.getDay(); // 0 Sun .. 6 Sat
-  // We want Tuesday = 2
   const diff = (day >= 2) ? (day - 2) : (7 - (2 - day));
   x.setDate(x.getDate() - diff);
   x.setHours(0,0,0,0);
   return x;
 }
-function fmtDateISO(d){
-  return d.toISOString().slice(0,10);
-}
-function ymFromDate(d){
-  return d.toISOString().slice(0,7); // YYYY-MM
-}
+function fmtDateISO(d){ return d.toISOString().slice(0,10); }
+function ymFromDate(d){ return d.toISOString().slice(0,7); }
 
 function fillHistoryWeeks(){
   const now = new Date();
@@ -337,7 +369,7 @@ function fillHistoryWeeks(){
 }
 
 async function loadHistory(){
-  const startISO = historyWeekSelect.value; // YYYY-MM-DD (Tuesday)
+  const startISO = historyWeekSelect.value;
   const d = new Date(startISO);
   const ym = ymFromDate(d);
 
@@ -346,7 +378,6 @@ async function loadHistory(){
 
   metaHistory.textContent = `Loading week ${startISO}...`;
 
-  // reset view
   errorHistoryGift.classList.add("hidden");
   errorHistoryKills.classList.add("hidden");
   tableWrapHistoryGift.classList.add("hidden");
@@ -357,33 +388,39 @@ async function loadHistory(){
   loadingHistoryGift.classList.remove("hidden");
   loadingHistoryKills.classList.remove("hidden");
 
-  // Gifts
+  // Gifts (recalc points + goal)
   try{
     const dataG = await fetchJSON(giftUrl);
-    let playersG = dataG.players || [];
-    playersG = sortPlayers(playersG, "pointsHunt");
+    let playersG = (dataG.players || []).map(p=>{
+      const points = calcHuntPoints(p);
+      const goalPct = calcGoalPct(points);
+      return { ...p, _points: points, _goalPct: goalPct };
+    });
+
+    playersG.sort((a,b)=> b._points - a._points);
 
     tbodyHistoryGift.innerHTML = "";
     playersG.forEach((p,i)=>{
       const cls =
-        p.goalPctHunt >= 1 ? "goal-good" :
-        p.goalPctHunt >= 0.5 ? "goal-warn" :
+        p._goalPct >= 1 ? "goal-good" :
+        p._goalPct >= 0.5 ? "goal-warn" :
         "goal-bad";
 
       const tr = document.createElement("tr");
+      addTopClass(tr, i);
       tr.innerHTML = `
         <td>${i+1}</td>
         <td class="name">${p.name ?? "-"}</td>
         <td>${fmtNum(p.purchase)}</td>
         <td>${fmtNum(p.hunt)}</td>
-        <td>${fmtNum(p.pointsHunt)}</td>
+        <td>${fmtNum(p._points)}</td>
         <td>${fmtNum(p.l1)}</td>
         <td>${fmtNum(p.l2)}</td>
         <td>${fmtNum(p.l3)}</td>
         <td>${fmtNum(p.l4)}</td>
         <td>${fmtNum(p.l5)}</td>
         <td>${fmtNum(p.total)}</td>
-        <td class="${cls}">${fmtPct(p.goalPctHunt)}</td>
+        <td class="${cls}">${fmtPct(p._goalPct)}</td>
       `;
       tbodyHistoryGift.appendChild(tr);
     });
@@ -400,11 +437,12 @@ async function loadHistory(){
   try{
     const dataK = await fetchJSON(killsUrl);
     let playersK = dataK.players || [];
-    playersK = sortPlayers(playersK, "killsThisWeek");
+    playersK.sort((a,b)=> (b.killsThisWeek||0) - (a.killsThisWeek||0));
 
     tbodyHistoryKills.innerHTML = "";
     playersK.forEach((p,i)=>{
       const tr = document.createElement("tr");
+      addTopClass(tr, i);
       tr.innerHTML = `
         <td>${i+1}</td>
         <td class="name">${p.name ?? "-"}</td>
@@ -430,8 +468,178 @@ fillHistoryWeeks();
 loadHistoryBtn.addEventListener("click", loadHistory);
 
 /* =========================
-   Init load current data
+   ALL-TIME STATS
+   ========================= */
+const refreshAlltimeBtn = document.getElementById("refreshAlltime");
+const metaAlltime = document.getElementById("metaAlltime");
+
+const loadingAlltimeGift = document.getElementById("loadingAlltimeGift");
+const loadingAlltimeKills = document.getElementById("loadingAlltimeKills");
+const loadingAlltimeFest  = document.getElementById("loadingAlltimeFest");
+
+const tableWrapAlltimeGift = document.getElementById("tableWrapAlltimeGift");
+const tableWrapAlltimeKills = document.getElementById("tableWrapAlltimeKills");
+const tableWrapAlltimeFest = document.getElementById("tableWrapAlltimeFest");
+
+const tbodyAlltimeGift = document.getElementById("tbodyAlltimeGift");
+const tbodyAlltimeKills = document.getElementById("tbodyAlltimeKills");
+const tbodyAlltimeFest = document.getElementById("tbodyAlltimeFest");
+
+async function loadAlltime(){
+  loadingAlltimeGift.classList.remove("hidden");
+  loadingAlltimeKills.classList.remove("hidden");
+  loadingAlltimeFest.classList.remove("hidden");
+
+  tableWrapAlltimeGift.classList.add("hidden");
+  tableWrapAlltimeKills.classList.add("hidden");
+  tableWrapAlltimeFest.classList.add("hidden");
+
+  const now = new Date();
+  const baseTue = getLastTue(now);
+
+  const weeksToCheck = 26; // ~6 months
+  const giftAgg = new Map();   // name -> {hunt, points, weeksSeen}
+  const killsAgg = new Map();  // name -> {totalKills}
+  const festAgg = new Map();   // name -> {points}
+
+  let weeksFound = 0;
+
+  for(let i=0;i<weeksToCheck;i++){
+    const weekStart = new Date(baseTue);
+    weekStart.setDate(baseTue.getDate() - i*7);
+    const startISO = fmtDateISO(weekStart);
+    const ym = ymFromDate(weekStart);
+
+    const giftUrl = `history/${ym}/week-${startISO}/gift.json`;
+    const killsUrl = `history/${ym}/week-${startISO}/kills.json`;
+    const festUrl  = `history/${ym}/week-${startISO}/guildfest.json`; // future-proof
+
+    // Gifts
+    try{
+      const g = await fetchJSON(giftUrl);
+      weeksFound++;
+
+      (g.players || []).forEach(p=>{
+        const name = p.name || "Unknown";
+        const points = calcHuntPoints(p);
+        const hunt = Number(p.hunt||0);
+
+        if(!giftAgg.has(name)){
+          giftAgg.set(name, { hunt:0, points:0, weeksSeen:0 });
+        }
+        const row = giftAgg.get(name);
+        row.hunt += hunt;
+        row.points += points;
+        row.weeksSeen += 1;
+      });
+    }catch(_){}
+
+    // Kills
+    try{
+      const k = await fetchJSON(killsUrl);
+      (k.players || []).forEach(p=>{
+        const name = p.name || "Unknown";
+        const totalKills = Number(p.totalKills||0);
+
+        if(!killsAgg.has(name)){
+          killsAgg.set(name, { totalKills:0 });
+        }
+        killsAgg.get(name).totalKills += totalKills;
+      });
+    }catch(_){}
+
+    // Guild Fest (if you add history later)
+    try{
+      const f = await fetchJSON(festUrl);
+      (f.players || []).forEach(p=>{
+        const name = p.name || "Unknown";
+        const pts = Number(p.points||0);
+
+        if(!festAgg.has(name)){
+          festAgg.set(name, { points:0 });
+        }
+        festAgg.get(name).points += pts;
+      });
+    }catch(_){}
+  }
+
+  /* ---- Render All-time Hunt ---- */
+  let allGift = [...giftAgg.entries()].map(([name,v])=>{
+    const overallGoal = v.weeksSeen ? v.points / (50*v.weeksSeen) : 0;
+    return { name, hunt:v.hunt, points:v.points, goal:overallGoal };
+  });
+
+  // order: points desc, if tie -> goal desc
+  allGift.sort((a,b)=>{
+    if (b.points !== a.points) return b.points - a.points;
+    return b.goal - a.goal;
+  });
+
+  tbodyAlltimeGift.innerHTML = "";
+  allGift.forEach((p,i)=>{
+    const tr = document.createElement("tr");
+    addTopClass(tr, i);
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td class="name">${p.name}</td>
+      <td>${fmtNum(p.hunt)}</td>
+      <td>${fmtNum(p.points)}</td>
+    `;
+    tbodyAlltimeGift.appendChild(tr);
+  });
+  tableWrapAlltimeGift.classList.remove("hidden");
+
+  /* ---- Render All-time Kills ---- */
+  let allKills = [...killsAgg.entries()].map(([name,v])=>{
+    return { name, totalKills:v.totalKills };
+  });
+  allKills.sort((a,b)=> b.totalKills - a.totalKills);
+
+  tbodyAlltimeKills.innerHTML = "";
+  allKills.forEach((p,i)=>{
+    const tr = document.createElement("tr");
+    addTopClass(tr, i);
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td class="name">${p.name}</td>
+      <td>${fmtNum(p.totalKills)}</td>
+    `;
+    tbodyAlltimeKills.appendChild(tr);
+  });
+  tableWrapAlltimeKills.classList.remove("hidden");
+
+  /* ---- Render All-time Guild Fest ---- */
+  let allFest = [...festAgg.entries()].map(([name,v])=>{
+    return { name, points:v.points };
+  });
+  allFest.sort((a,b)=> b.points - a.points);
+
+  tbodyAlltimeFest.innerHTML = "";
+  allFest.forEach((p,i)=>{
+    const tr = document.createElement("tr");
+    addTopClass(tr, i);
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td class="name">${p.name}</td>
+      <td>${fmtNum(p.points)}</td>
+    `;
+    tbodyAlltimeFest.appendChild(tr);
+  });
+  tableWrapAlltimeFest.classList.remove("hidden");
+
+  metaAlltime.textContent = `Weeks checked: ${weeksToCheck}  |  Weeks found: ${weeksFound}`;
+
+  loadingAlltimeGift.classList.add("hidden");
+  loadingAlltimeKills.classList.add("hidden");
+  loadingAlltimeFest.classList.add("hidden");
+}
+
+refreshAlltimeBtn.addEventListener("click", loadAlltime);
+
+/* =========================
+   Init
    ========================= */
 loadGift();
 loadKills();
 loadFest();
+loadAlltime();

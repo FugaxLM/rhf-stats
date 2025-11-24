@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-24T20:57:30",
+  "generatedAt": "2025-11-25T00:01:18",
   "weekStart": "2025-08-04",
   "weekEnd": "2025-08-10",
   "players": [
@@ -14,7 +14,7 @@
       "l4": 2,
       "l5": 10,
       "pointsHunt": 279,
-      "goalPctHunt": 0.24
+      "goalPctHunt": 5.58
     },
     {
       "name": "SinfulSweet",
@@ -27,7 +27,7 @@
       "l4": 1,
       "l5": 8,
       "pointsHunt": 205,
-      "goalPctHunt": 2.16
+      "goalPctHunt": 4.1
     },
     {
       "name": "Mortier81mm",
@@ -40,7 +40,7 @@
       "l4": 0,
       "l5": 4,
       "pointsHunt": 190,
-      "goalPctHunt": 1.62
+      "goalPctHunt": 3.8
     },
     {
       "name": "CIUPAQ MIHAI",
@@ -53,7 +53,7 @@
       "l4": 0,
       "l5": 4,
       "pointsHunt": 149,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 2.98
     },
     {
       "name": "B1gBadWolf",
@@ -66,7 +66,7 @@
       "l4": 0,
       "l5": 7,
       "pointsHunt": 142,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 2.84
     },
     {
       "name": "Super Bad",
@@ -79,7 +79,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 125,
-      "goalPctHunt": 1.28
+      "goalPctHunt": 2.5
     },
     {
       "name": "iulicu2010",
@@ -92,7 +92,7 @@
       "l4": 0,
       "l5": 5,
       "pointsHunt": 121,
-      "goalPctHunt": 0.72
+      "goalPctHunt": 2.42
     },
     {
       "name": "CrispyPoo",
@@ -105,7 +105,7 @@
       "l4": 6,
       "l5": 1,
       "pointsHunt": 105,
-      "goalPctHunt": 0.42
+      "goalPctHunt": 2.1
     },
     {
       "name": "GoMoRrA89",
@@ -118,7 +118,7 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 100,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 2.0
     },
     {
       "name": "ImCro",
@@ -131,7 +131,7 @@
       "l4": 2,
       "l5": 2,
       "pointsHunt": 94,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.88
     },
     {
       "name": "Celticus",
@@ -144,7 +144,7 @@
       "l4": 1,
       "l5": 4,
       "pointsHunt": 88,
-      "goalPctHunt": 0.36
+      "goalPctHunt": 1.76
     },
     {
       "name": "ClementineSN",
@@ -157,7 +157,7 @@
       "l4": 0,
       "l5": 2,
       "pointsHunt": 83,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.66
     },
     {
       "name": "heyhysaL",
@@ -170,7 +170,7 @@
       "l4": 2,
       "l5": 0,
       "pointsHunt": 83,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 1.66
     },
     {
       "name": "Mihai 2017",
@@ -183,7 +183,7 @@
       "l4": 8,
       "l5": 0,
       "pointsHunt": 82,
-      "goalPctHunt": 0.36
+      "goalPctHunt": 1.64
     },
     {
       "name": "DANNY DILY",
@@ -196,7 +196,7 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 78,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 1.56
     },
     {
       "name": "bulibasa",
@@ -209,7 +209,7 @@
       "l4": 0,
       "l5": 2,
       "pointsHunt": 78,
-      "goalPctHunt": 0.06
+      "goalPctHunt": 1.56
     },
     {
       "name": "St3fan",
@@ -222,7 +222,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 76,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.52
     },
     {
       "name": "SwanNyx",
@@ -235,7 +235,7 @@
       "l4": 0,
       "l5": 2,
       "pointsHunt": 75,
-      "goalPctHunt": 0.4
+      "goalPctHunt": 1.5
     },
     {
       "name": "Danut32",
@@ -248,7 +248,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 74,
-      "goalPctHunt": 0.06
+      "goalPctHunt": 1.48
     },
     {
       "name": "Stf90",
@@ -261,7 +261,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 73,
-      "goalPctHunt": 0.22
+      "goalPctHunt": 1.46
     },
     {
       "name": "x dnd x",
@@ -274,7 +274,7 @@
       "l4": 1,
       "l5": 2,
       "pointsHunt": 73,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.46
     },
     {
       "name": "excesives",
@@ -287,20 +287,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 67,
-      "goalPctHunt": 0.18
-    },
-    {
-      "name": "NoCandy",
-      "purchase": 0,
-      "hunt": 61,
-      "total": 61,
-      "l1": 0,
-      "l2": 59,
-      "l3": 2,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 65,
-      "goalPctHunt": 0.22
+      "goalPctHunt": 1.34
     },
     {
       "name": "CIUPAQBRA RO",
@@ -313,20 +300,20 @@
       "l4": 2,
       "l5": 1,
       "pointsHunt": 65,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 1.3
     },
     {
-      "name": "eSuuu",
+      "name": "NoCandy",
       "purchase": 0,
-      "hunt": 44,
-      "total": 44,
+      "hunt": 61,
+      "total": 61,
       "l1": 0,
-      "l2": 37,
-      "l3": 6,
-      "l4": 1,
+      "l2": 59,
+      "l3": 2,
+      "l4": 0,
       "l5": 0,
-      "pointsHunt": 64,
-      "goalPctHunt": 0.28
+      "pointsHunt": 65,
+      "goalPctHunt": 1.3
     },
     {
       "name": "Winjacknr1",
@@ -339,7 +326,20 @@
       "l4": 0,
       "l5": 2,
       "pointsHunt": 64,
-      "goalPctHunt": 0.02
+      "goalPctHunt": 1.28
+    },
+    {
+      "name": "eSuuu",
+      "purchase": 0,
+      "hunt": 44,
+      "total": 44,
+      "l1": 0,
+      "l2": 37,
+      "l3": 6,
+      "l4": 1,
+      "l5": 0,
+      "pointsHunt": 64,
+      "goalPctHunt": 1.28
     },
     {
       "name": "MisterAndrey",
@@ -352,20 +352,7 @@
       "l4": 5,
       "l5": 0,
       "pointsHunt": 63,
-      "goalPctHunt": 0.54
-    },
-    {
-      "name": "Silviutza",
-      "purchase": 0,
-      "hunt": 51,
-      "total": 51,
-      "l1": 0,
-      "l2": 45,
-      "l3": 6,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 63,
-      "goalPctHunt": 0.24
+      "goalPctHunt": 1.26
     },
     {
       "name": "Nightwing333",
@@ -378,46 +365,20 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 63,
-      "goalPctHunt": 0.2
+      "goalPctHunt": 1.26
     },
     {
-      "name": "lungu",
-      "purchase": 4,
-      "hunt": 17,
-      "total": 21,
-      "l1": 0,
-      "l2": 11,
-      "l3": 2,
-      "l4": 3,
-      "l5": 1,
-      "pointsHunt": 62,
-      "goalPctHunt": 0.44
-    },
-    {
-      "name": "Guffy87",
+      "name": "Silviutza",
       "purchase": 0,
-      "hunt": 41,
-      "total": 41,
+      "hunt": 51,
+      "total": 51,
       "l1": 0,
-      "l2": 38,
-      "l3": 2,
-      "l4": 0,
-      "l5": 1,
-      "pointsHunt": 62,
-      "goalPctHunt": 0.2
-    },
-    {
-      "name": "CSAsergiu2",
-      "purchase": 0,
-      "hunt": 50,
-      "total": 50,
-      "l1": 0,
-      "l2": 44,
+      "l2": 45,
       "l3": 6,
       "l4": 0,
       "l5": 0,
-      "pointsHunt": 62,
-      "goalPctHunt": 0.18
+      "pointsHunt": 63,
+      "goalPctHunt": 1.26
     },
     {
       "name": "CSASergiu",
@@ -430,7 +391,46 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 62,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.24
+    },
+    {
+      "name": "CSAsergiu2",
+      "purchase": 0,
+      "hunt": 50,
+      "total": 50,
+      "l1": 0,
+      "l2": 44,
+      "l3": 6,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 62,
+      "goalPctHunt": 1.24
+    },
+    {
+      "name": "Guffy87",
+      "purchase": 0,
+      "hunt": 41,
+      "total": 41,
+      "l1": 0,
+      "l2": 38,
+      "l3": 2,
+      "l4": 0,
+      "l5": 1,
+      "pointsHunt": 62,
+      "goalPctHunt": 1.24
+    },
+    {
+      "name": "lungu",
+      "purchase": 4,
+      "hunt": 17,
+      "total": 21,
+      "l1": 0,
+      "l2": 11,
+      "l3": 2,
+      "l4": 3,
+      "l5": 1,
+      "pointsHunt": 62,
+      "goalPctHunt": 1.24
     },
     {
       "name": "Du Rex",
@@ -443,7 +443,7 @@
       "l4": 0,
       "l5": 2,
       "pointsHunt": 61,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 1.22
     },
     {
       "name": "ALFA 000",
@@ -456,7 +456,7 @@
       "l4": 1,
       "l5": 1,
       "pointsHunt": 60,
-      "goalPctHunt": 0.36
+      "goalPctHunt": 1.2
     },
     {
       "name": "VladTepesS",
@@ -469,7 +469,7 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 59,
-      "goalPctHunt": 0.06
+      "goalPctHunt": 1.18
     },
     {
       "name": "FisherAdy80",
@@ -482,20 +482,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 58,
-      "goalPctHunt": 0.22
-    },
-    {
-      "name": "nikusor0506",
-      "purchase": 0,
-      "hunt": 46,
-      "total": 46,
-      "l1": 0,
-      "l2": 40,
-      "l3": 6,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 58,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.16
     },
     {
       "name": "Raz66",
@@ -508,7 +495,20 @@
       "l4": 1,
       "l5": 1,
       "pointsHunt": 58,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.16
+    },
+    {
+      "name": "nikusor0506",
+      "purchase": 0,
+      "hunt": 46,
+      "total": 46,
+      "l1": 0,
+      "l2": 40,
+      "l3": 6,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 58,
+      "goalPctHunt": 1.16
     },
     {
       "name": "Christian10x",
@@ -521,7 +521,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 57,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.14
     },
     {
       "name": "Luckian",
@@ -534,7 +534,7 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 57,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 1.14
     },
     {
       "name": "motanel004",
@@ -547,7 +547,46 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 55,
-      "goalPctHunt": 0.2
+      "goalPctHunt": 1.1
+    },
+    {
+      "name": "Alin1986alin",
+      "purchase": 2,
+      "hunt": 14,
+      "total": 16,
+      "l1": 0,
+      "l2": 0,
+      "l3": 12,
+      "l4": 2,
+      "l5": 0,
+      "pointsHunt": 54,
+      "goalPctHunt": 1.08
+    },
+    {
+      "name": "Galateanu",
+      "purchase": 0,
+      "hunt": 21,
+      "total": 21,
+      "l1": 0,
+      "l2": 12,
+      "l3": 8,
+      "l4": 0,
+      "l5": 1,
+      "pointsHunt": 54,
+      "goalPctHunt": 1.08
+    },
+    {
+      "name": "Garcea",
+      "purchase": 0,
+      "hunt": 40,
+      "total": 40,
+      "l1": 0,
+      "l2": 33,
+      "l3": 7,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 54,
+      "goalPctHunt": 1.08
     },
     {
       "name": "WolfStreet",
@@ -563,45 +602,6 @@
       "goalPctHunt": 1.08
     },
     {
-      "name": "Garcea",
-      "purchase": 0,
-      "hunt": 40,
-      "total": 40,
-      "l1": 0,
-      "l2": 33,
-      "l3": 7,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 54,
-      "goalPctHunt": 0.18
-    },
-    {
-      "name": "Alin1986alin",
-      "purchase": 2,
-      "hunt": 14,
-      "total": 16,
-      "l1": 0,
-      "l2": 0,
-      "l3": 12,
-      "l4": 2,
-      "l5": 0,
-      "pointsHunt": 54,
-      "goalPctHunt": 0.12
-    },
-    {
-      "name": "Galateanu",
-      "purchase": 0,
-      "hunt": 21,
-      "total": 21,
-      "l1": 0,
-      "l2": 12,
-      "l3": 8,
-      "l4": 0,
-      "l5": 1,
-      "pointsHunt": 54,
-      "goalPctHunt": 0.1
-    },
-    {
       "name": "XxAnub1sxX",
       "purchase": 0,
       "hunt": 19,
@@ -612,7 +612,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 53,
-      "goalPctHunt": 0.06
+      "goalPctHunt": 1.06
     },
     {
       "name": "Andreioty",
@@ -625,7 +625,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 52,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.04
     },
     {
       "name": "Free kiIIs",
@@ -638,7 +638,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 52,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 1.04
     },
     {
       "name": "RacKu",
@@ -651,20 +651,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 52,
-      "goalPctHunt": 0.08
-    },
-    {
-      "name": "WitcherMishu",
-      "purchase": 0,
-      "hunt": 21,
-      "total": 21,
-      "l1": 0,
-      "l2": 6,
-      "l3": 15,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 51,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 1.04
     },
     {
       "name": "DihaniaDracu",
@@ -677,20 +664,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 51,
-      "goalPctHunt": 0.16
-    },
-    {
-      "name": "FuzzzyBuzzy",
-      "purchase": 0,
-      "hunt": 37,
-      "total": 37,
-      "l1": 0,
-      "l2": 30,
-      "l3": 7,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 51,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 1.02
     },
     {
       "name": "Faby0032",
@@ -703,20 +677,33 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 51,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 1.02
     },
     {
-      "name": "ThePwnzrox",
-      "purchase": 1,
-      "hunt": 14,
-      "total": 15,
+      "name": "FuzzzyBuzzy",
+      "purchase": 0,
+      "hunt": 37,
+      "total": 37,
       "l1": 0,
-      "l2": 11,
-      "l3": 1,
+      "l2": 30,
+      "l3": 7,
       "l4": 0,
-      "l5": 2,
-      "pointsHunt": 50,
-      "goalPctHunt": 0.38
+      "l5": 0,
+      "pointsHunt": 51,
+      "goalPctHunt": 1.02
+    },
+    {
+      "name": "WitcherMishu",
+      "purchase": 0,
+      "hunt": 21,
+      "total": 21,
+      "l1": 0,
+      "l2": 6,
+      "l3": 15,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 51,
+      "goalPctHunt": 1.02
     },
     {
       "name": "Stefu1",
@@ -729,20 +716,20 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 50,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.0
     },
     {
-      "name": "sacalu20ro",
-      "purchase": 0,
-      "hunt": 40,
-      "total": 40,
+      "name": "ThePwnzrox",
+      "purchase": 1,
+      "hunt": 14,
+      "total": 15,
       "l1": 0,
-      "l2": 35,
-      "l3": 5,
+      "l2": 11,
+      "l3": 1,
       "l4": 0,
-      "l5": 0,
+      "l5": 2,
       "pointsHunt": 50,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 1.0
     },
     {
       "name": "mPara",
@@ -755,7 +742,20 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 50,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 1.0
+    },
+    {
+      "name": "sacalu20ro",
+      "purchase": 0,
+      "hunt": 40,
+      "total": 40,
+      "l1": 0,
+      "l2": 35,
+      "l3": 5,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 50,
+      "goalPctHunt": 1.0
     },
     {
       "name": "Aditu",
@@ -768,7 +768,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 49,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 0.98
     },
     {
       "name": "DudaMax",
@@ -781,7 +781,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 49,
-      "goalPctHunt": 0.14
+      "goalPctHunt": 0.98
     },
     {
       "name": "SenseiSS",
@@ -794,7 +794,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 49,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.98
     },
     {
       "name": "XMariusX0034",
@@ -807,7 +807,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 49,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.98
     },
     {
       "name": "gor3",
@@ -820,7 +820,7 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 49,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.98
     },
     {
       "name": "SuperPetrica",
@@ -833,7 +833,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 48,
-      "goalPctHunt": 0.16
+      "goalPctHunt": 0.96
     },
     {
       "name": "piatra",
@@ -846,20 +846,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 47,
-      "goalPctHunt": 0.08
-    },
-    {
-      "name": "n3mesis",
-      "purchase": 0,
-      "hunt": 28,
-      "total": 28,
-      "l1": 0,
-      "l2": 20,
-      "l3": 8,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 44,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 0.94
     },
     {
       "name": "3Dutu6",
@@ -872,33 +859,20 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 44,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.88
     },
     {
-      "name": "Pixw",
-      "purchase": 4,
-      "hunt": 41,
-      "total": 45,
-      "l1": 0,
-      "l2": 40,
-      "l3": 1,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 43,
-      "goalPctHunt": 0.16
-    },
-    {
-      "name": "Michidutz",
+      "name": "n3mesis",
       "purchase": 0,
-      "hunt": 31,
-      "total": 31,
+      "hunt": 28,
+      "total": 28,
       "l1": 0,
-      "l2": 25,
-      "l3": 6,
+      "l2": 20,
+      "l3": 8,
       "l4": 0,
       "l5": 0,
-      "pointsHunt": 43,
-      "goalPctHunt": 0.14
+      "pointsHunt": 44,
+      "goalPctHunt": 0.88
     },
     {
       "name": "E d i83",
@@ -911,7 +885,33 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 43,
-      "goalPctHunt": 0.04
+      "goalPctHunt": 0.86
+    },
+    {
+      "name": "Michidutz",
+      "purchase": 0,
+      "hunt": 31,
+      "total": 31,
+      "l1": 0,
+      "l2": 25,
+      "l3": 6,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 43,
+      "goalPctHunt": 0.86
+    },
+    {
+      "name": "Pixw",
+      "purchase": 4,
+      "hunt": 41,
+      "total": 45,
+      "l1": 0,
+      "l2": 40,
+      "l3": 1,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 43,
+      "goalPctHunt": 0.86
     },
     {
       "name": "SevenSins700",
@@ -924,7 +924,7 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 43,
-      "goalPctHunt": 0.04
+      "goalPctHunt": 0.86
     },
     {
       "name": "ANTRAX RX",
@@ -937,7 +937,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 42,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.84
     },
     {
       "name": "MadCrimson",
@@ -950,7 +950,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 41,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.82
     },
     {
       "name": "haiNOROK",
@@ -963,7 +963,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 40,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.8
     },
     {
       "name": "sStittchx",
@@ -976,7 +976,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 40,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.8
     },
     {
       "name": "VIKING 1",
@@ -989,33 +989,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 38,
-      "goalPctHunt": 0.16
-    },
-    {
-      "name": "jas 92",
-      "purchase": 0,
-      "hunt": 27,
-      "total": 27,
-      "l1": 0,
-      "l2": 22,
-      "l3": 5,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 37,
-      "goalPctHunt": 0.14
-    },
-    {
-      "name": "TNT1998",
-      "purchase": 0,
-      "hunt": 15,
-      "total": 15,
-      "l1": 0,
-      "l2": 4,
-      "l3": 11,
-      "l4": 0,
-      "l5": 0,
-      "pointsHunt": 37,
-      "goalPctHunt": 0.06
+      "goalPctHunt": 0.76
     },
     {
       "name": "Dan i el",
@@ -1028,20 +1002,33 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 37,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.74
     },
     {
-      "name": "ONNNU",
+      "name": "TNT1998",
       "purchase": 0,
-      "hunt": 32,
-      "total": 32,
+      "hunt": 15,
+      "total": 15,
       "l1": 0,
-      "l2": 30,
-      "l3": 2,
+      "l2": 4,
+      "l3": 11,
       "l4": 0,
       "l5": 0,
-      "pointsHunt": 36,
-      "goalPctHunt": 0.12
+      "pointsHunt": 37,
+      "goalPctHunt": 0.74
+    },
+    {
+      "name": "jas 92",
+      "purchase": 0,
+      "hunt": 27,
+      "total": 27,
+      "l1": 0,
+      "l2": 22,
+      "l3": 5,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 37,
+      "goalPctHunt": 0.74
     },
     {
       "name": "MiTzA85",
@@ -1054,7 +1041,20 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 36,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.72
+    },
+    {
+      "name": "ONNNU",
+      "purchase": 0,
+      "hunt": 32,
+      "total": 32,
+      "l1": 0,
+      "l2": 30,
+      "l3": 2,
+      "l4": 0,
+      "l5": 0,
+      "pointsHunt": 36,
+      "goalPctHunt": 0.72
     },
     {
       "name": "BigBrOth3r",
@@ -1067,7 +1067,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 34,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 0.68
     },
     {
       "name": "Kamadeva",
@@ -1080,7 +1080,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 34,
-      "goalPctHunt": 0.12
+      "goalPctHunt": 0.68
     },
     {
       "name": "Lolo Raul",
@@ -1093,20 +1093,7 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 34,
-      "goalPctHunt": 0.12
-    },
-    {
-      "name": "ROstefanRO",
-      "purchase": 1,
-      "hunt": 5,
-      "total": 6,
-      "l1": 0,
-      "l2": 0,
-      "l3": 2,
-      "l4": 3,
-      "l5": 0,
-      "pointsHunt": 33,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 0.68
     },
     {
       "name": "2Ady",
@@ -1119,7 +1106,7 @@
       "l4": 2,
       "l5": 0,
       "pointsHunt": 33,
-      "goalPctHunt": 0.04
+      "goalPctHunt": 0.66
     },
     {
       "name": "BlackBlade A",
@@ -1132,7 +1119,20 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 33,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.66
+    },
+    {
+      "name": "ROstefanRO",
+      "purchase": 1,
+      "hunt": 5,
+      "total": 6,
+      "l1": 0,
+      "l2": 0,
+      "l3": 2,
+      "l4": 3,
+      "l5": 0,
+      "pointsHunt": 33,
+      "goalPctHunt": 0.66
     },
     {
       "name": "s3b4",
@@ -1145,7 +1145,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 31,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.62
     },
     {
       "name": "ThaliaRhf",
@@ -1158,7 +1158,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 28,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.56
     },
     {
       "name": "N e B r A",
@@ -1171,7 +1171,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 27,
-      "goalPctHunt": 0.18
+      "goalPctHunt": 0.54
     },
     {
       "name": "SlySly",
@@ -1184,7 +1184,7 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 26,
-      "goalPctHunt": 0.08
+      "goalPctHunt": 0.52
     },
     {
       "name": "xXxDarianxXx",
@@ -1197,7 +1197,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 25,
-      "goalPctHunt": 0.1
+      "goalPctHunt": 0.5
     },
     {
       "name": "Rykan03",
@@ -1210,7 +1210,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 22,
-      "goalPctHunt": 0.08
+      "goalPctHunt": 0.44
     },
     {
       "name": "Iuca",
@@ -1223,7 +1223,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 21,
-      "goalPctHunt": 0.08
+      "goalPctHunt": 0.42
     },
     {
       "name": "Zarasahara",
@@ -1236,7 +1236,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 20,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.4
     },
     {
       "name": "bgdbgd",
@@ -1249,7 +1249,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 19,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.38
     },
     {
       "name": "Abella",
@@ -1262,7 +1262,7 @@
       "l4": 0,
       "l5": 1,
       "pointsHunt": 18,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.36
     },
     {
       "name": "CrYma2009",
@@ -1275,7 +1275,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 10,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.2
     },
     {
       "name": "0Rode0",
@@ -1288,7 +1288,7 @@
       "l4": 1,
       "l5": 0,
       "pointsHunt": 9,
-      "goalPctHunt": 0.0
+      "goalPctHunt": 0.18
     },
     {
       "name": "CatNoire",
@@ -1301,7 +1301,7 @@
       "l4": 0,
       "l5": 0,
       "pointsHunt": 3,
-      "goalPctHunt": 0.02
+      "goalPctHunt": 0.06
     },
     {
       "name": "SinfulSw33t",

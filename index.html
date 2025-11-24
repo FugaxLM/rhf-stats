@@ -11,15 +11,14 @@
   <header class="wrap">
     <div class="hero">
       <h1>RHF – Weekly Stats</h1>
-      <p class="muted" id="subtitle">
-        Auto-updates from bot exports.
-      </p>
+      <p class="muted" id="subtitle">Auto-updates from bot exports.</p>
 
       <div class="tabs" role="tablist">
         <button class="tab-btn active" data-tab="gift" role="tab">Hunt (Gifts)</button>
         <button class="tab-btn" data-tab="kills" role="tab">Kills</button>
         <button class="tab-btn" data-tab="fest" role="tab">Guild Fest</button>
         <button class="tab-btn" data-tab="history" role="tab">History</button>
+        <button class="tab-btn" data-tab="alltime" role="tab">All-time stats</button>
       </div>
     </div>
   </header>
@@ -127,7 +126,6 @@
             <input id="searchFest" type="text" placeholder="Search player..." />
             <select id="sortFest">
               <option value="points">Sort by Points</option>
-              <option value="rank">Sort by Rank</option>
               <option value="name">Sort by Name</option>
             </select>
             <button id="refreshFest">Refresh</button>
@@ -146,8 +144,6 @@
                   <th>#</th>
                   <th>Player</th>
                   <th>Points</th>
-                  <th>Rank</th>
-                  <th>Goal %</th>
                 </tr>
               </thead>
               <tbody id="tbodyFest"></tbody>
@@ -223,6 +219,84 @@
               </div>
             </div>
             <div id="errorHistoryKills" class="error hidden"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALL TIME ========== -->
+    <section id="tab-alltime" class="section hidden">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Statistics of all times</h2>
+          <p class="muted small">
+            This section sums all available history weeks.
+          </p>
+          <div class="controls">
+            <button id="refreshAlltime">Recalculate</button>
+          </div>
+          <div id="metaAlltime" class="meta"></div>
+        </div>
+
+        <div class="history-grid">
+
+          <div class="history-block">
+            <h3>All-time Hunt</h3>
+            <div id="loadingAlltimeGift" class="loading small">Loading…</div>
+            <div class="table-wrap hidden" id="tableWrapAlltimeGift">
+              <div class="table-scroll">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Hunt</th>
+                    <th>Points</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbodyAlltimeGift"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <h3>All-time Kills</h3>
+            <div id="loadingAlltimeKills" class="loading small">Loading…</div>
+            <div class="table-wrap hidden" id="tableWrapAlltimeKills">
+              <div class="table-scroll">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Total kills</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbodyAlltimeKills"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <h3>All-time Guild Fest</h3>
+            <div id="loadingAlltimeFest" class="loading small">Loading…</div>
+            <div class="table-wrap hidden" id="tableWrapAlltimeFest">
+              <div class="table-scroll">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Total points</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbodyAlltimeFest"></tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
         </div>

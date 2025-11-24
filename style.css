@@ -1,6 +1,3 @@
-/* =========================
-   Base + tema oscuro limpio
-   ========================= */
 :root{
   --bg: #0b0d10;
   --panel: #121622;
@@ -46,9 +43,7 @@ h3{ margin:0 0 8px; font-size: 16px; }
 .muted{ color: var(--muted); }
 .small{ font-size: 12px; }
 
-/* =========================
-   Tabs
-   ========================= */
+/* Tabs */
 .tabs{
   display:flex; gap:8px; flex-wrap:wrap;
   margin-top: 12px;
@@ -70,9 +65,7 @@ h3{ margin:0 0 8px; font-size: 16px; }
   color: white;
 }
 
-/* =========================
-   Panel / secciones
-   ========================= */
+/* Panel */
 .section{ margin: 14px 0 24px; }
 .section.hidden{ display:none; }
 
@@ -124,9 +117,7 @@ h3{ margin:0 0 8px; font-size: 16px; }
   color: var(--muted);
 }
 
-/* =========================
-   Tabla
-   ========================= */
+/* Table */
 .table-wrap{ width:100%; }
 .table-wrap.hidden{ display:none; }
 .table-scroll{ overflow-x:auto; }
@@ -156,14 +147,19 @@ h3{ margin:0 0 8px; font-size: 16px; }
   font-weight: 700;
 }
 
+/* TOP highlights */
+.table tbody tr.row-top3{
+  background: rgba(255,255,255,.10);
+}
+.table tbody tr.row-top10{
+  background: rgba(255,255,255,.05);
+}
+
 /* Goal % colors */
 .goal-good{ color: var(--good); font-weight: 800; }
 .goal-warn{ color: var(--warn); font-weight: 800; }
 .goal-bad{ color: var(--bad); font-weight: 800; }
 
-/* =========================
-   Errors / warnings
-   ========================= */
 .error{
   margin-top: 10px;
   padding: 10px 12px;
@@ -174,9 +170,7 @@ h3{ margin:0 0 8px; font-size: 16px; }
 }
 .hidden{ display:none; }
 
-/* =========================
-   History layout
-   ========================= */
+/* History / All-time layout */
 .history-controls{
   grid-template-columns: 1fr auto;
 }
