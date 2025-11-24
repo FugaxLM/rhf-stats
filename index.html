@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lords Mobile – Hunt Ranking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="wrap">
+    <div class="hero">
+      <h1>Lords Mobile – Hunt Ranking</h1>
+      <p class="muted">
+        Current week (auto-updates every hour from the bot).
+      </p>
+
+      <div class="controls">
+        <input id="search" type="text" placeholder="Search player..." />
+        <select id="sort">
+          <option value="hunt">Sort by Hunt</option>
+          <option value="pointsHunt">Sort by Hunt points</option>
+          <option value="total">Sort by Total</option>
+          <option value="might">Sort by Might</option>
+          <option value="name">Sort by Name</option>
+        </select>
+        <button id="refresh">Refresh</button>
+      </div>
+
+      <div id="meta" class="meta"></div>
+      <div id="staleWarn" class="muted small"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="loading" class="loading">Loading data...</div>
+
+    <div class="table-wrap hidden" id="tableWrap">
+      <div class="table-scroll">
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Rank</th>
+              <th>Might</th>
+              <th>Total</th>
+              <th>Hunt</th>
+              <th>Points</th>
+              <th>L1</th>
+              <th>L2</th>
+              <th>L3</th>
+              <th>L4</th>
+              <th>L5</th>
+              <th>Goal %</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </main>
+
+  <footer class="wrap muted small">
+    Made for the guild. If something looks wrong, tell excesives 🙂
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

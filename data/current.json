@@ -1,0 +1,21 @@
+{
+  "generatedAt": "test",
+  "weekStart": "2025-11-24",
+  "weekEnd": "2025-11-30",
+  "players": [
+    {
+      "name": "TestPlayer",
+      "rank": "RANK5",
+      "l1": 1,
+      "l2": 2,
+      "l3": 3,
+      "l4": 4,
+      "l5": 5,
+      "purchase": 1,
+      "hunt": 15,
+      "total": 16,
+      "pointsHunt": 20,
+      "goalPctHunt": 0.5
+    }
+  ]
+}
