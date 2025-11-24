@@ -1,0 +1,2 @@
+# rhf-stats
+Guild statistics
