@@ -1,0 +1,587 @@
+{
+  "generatedAt": "2025-11-24T20:41:00",
+  "festWeekStart": "2025-11-24",
+  "festWeekEnd": "2025-11-30",
+  "source": {
+    "festFileUsed": "2025-11-24 06.14 GUILD_FESTIVAL RhF.xlsx",
+    "festFileDate": "2025-11-24T06:14"
+  },
+  "players": [
+    {
+      "name": "Mihai 2017",
+      "rank": null,
+      "points": 3435,
+      "goalPct": null
+    },
+    {
+      "name": "SinfulSweet",
+      "rank": null,
+      "points": 3205,
+      "goalPct": null
+    },
+    {
+      "name": "Luckian",
+      "rank": null,
+      "points": 3043,
+      "goalPct": null
+    },
+    {
+      "name": "Mortier81mm",
+      "rank": null,
+      "points": 2977,
+      "goalPct": null
+    },
+    {
+      "name": "BigBrOth3r",
+      "rank": null,
+      "points": 2968,
+      "goalPct": null
+    },
+    {
+      "name": "and0n3",
+      "rank": null,
+      "points": 2946,
+      "goalPct": null
+    },
+    {
+      "name": "SenseiSS",
+      "rank": null,
+      "points": 2939,
+      "goalPct": null
+    },
+    {
+      "name": "Danut32",
+      "rank": null,
+      "points": 2938,
+      "goalPct": null
+    },
+    {
+      "name": "ImCro",
+      "rank": null,
+      "points": 2932,
+      "goalPct": null
+    },
+    {
+      "name": "XxAnub1sxX",
+      "rank": null,
+      "points": 2895,
+      "goalPct": null
+    },
+    {
+      "name": "iulicu2010",
+      "rank": null,
+      "points": 2866,
+      "goalPct": null
+    },
+    {
+      "name": "lungu",
+      "rank": null,
+      "points": 2844,
+      "goalPct": null
+    },
+    {
+      "name": "Raz66",
+      "rank": null,
+      "points": 2801,
+      "goalPct": null
+    },
+    {
+      "name": "big zoro",
+      "rank": null,
+      "points": 2790,
+      "goalPct": null
+    },
+    {
+      "name": "Abella",
+      "rank": null,
+      "points": 2784,
+      "goalPct": null
+    },
+    {
+      "name": "Super Bad",
+      "rank": null,
+      "points": 2775,
+      "goalPct": null
+    },
+    {
+      "name": "B1gBadWolf",
+      "rank": null,
+      "points": 2773,
+      "goalPct": null
+    },
+    {
+      "name": "bgdbgd",
+      "rank": null,
+      "points": 2739,
+      "goalPct": null
+    },
+    {
+      "name": "BlackBlade A",
+      "rank": null,
+      "points": 2722,
+      "goalPct": null
+    },
+    {
+      "name": "ANTRAX RX",
+      "rank": null,
+      "points": 2722,
+      "goalPct": null
+    },
+    {
+      "name": "Alin1986alin",
+      "rank": null,
+      "points": 2705,
+      "goalPct": null
+    },
+    {
+      "name": "XMariusX0034",
+      "rank": null,
+      "points": 2689,
+      "goalPct": null
+    },
+    {
+      "name": "FisherAdy80",
+      "rank": null,
+      "points": 2685,
+      "goalPct": null
+    },
+    {
+      "name": "jaspal 92",
+      "rank": null,
+      "points": 2662,
+      "goalPct": null
+    },
+    {
+      "name": "NoCandy",
+      "rank": null,
+      "points": 2660,
+      "goalPct": null
+    },
+    {
+      "name": "MateiRo1",
+      "rank": null,
+      "points": 2653,
+      "goalPct": null
+    },
+    {
+      "name": "DANNY DILY",
+      "rank": null,
+      "points": 2641,
+      "goalPct": null
+    },
+    {
+      "name": "DihaniaDracu",
+      "rank": null,
+      "points": 2616,
+      "goalPct": null
+    },
+    {
+      "name": "SwanNyx",
+      "rank": null,
+      "points": 2602,
+      "goalPct": null
+    },
+    {
+      "name": "Michidutz",
+      "rank": null,
+      "points": 2596,
+      "goalPct": null
+    },
+    {
+      "name": "0Rode0",
+      "rank": null,
+      "points": 2563,
+      "goalPct": null
+    },
+    {
+      "name": "Rykan03",
+      "rank": null,
+      "points": 2554,
+      "goalPct": null
+    },
+    {
+      "name": "Lolo Raul",
+      "rank": null,
+      "points": 2543,
+      "goalPct": null
+    },
+    {
+      "name": "pele91",
+      "rank": null,
+      "points": 2541,
+      "goalPct": null
+    },
+    {
+      "name": "motanel004",
+      "rank": null,
+      "points": 2537,
+      "goalPct": null
+    },
+    {
+      "name": "MadCrimson",
+      "rank": null,
+      "points": 2532,
+      "goalPct": null
+    },
+    {
+      "name": "Faby0032",
+      "rank": null,
+      "points": 2530,
+      "goalPct": null
+    },
+    {
+      "name": "ThePwnzrox",
+      "rank": null,
+      "points": 2523,
+      "goalPct": null
+    },
+    {
+      "name": "lord zoro",
+      "rank": null,
+      "points": 2511,
+      "goalPct": null
+    },
+    {
+      "name": "DudaMax",
+      "rank": null,
+      "points": 2495,
+      "goalPct": null
+    },
+    {
+      "name": "haiNOROK",
+      "rank": null,
+      "points": 2469,
+      "goalPct": null
+    },
+    {
+      "name": "piatra",
+      "rank": null,
+      "points": 2452,
+      "goalPct": null
+    },
+    {
+      "name": "MiTzA85",
+      "rank": null,
+      "points": 2442,
+      "goalPct": null
+    },
+    {
+      "name": "CrYma2009",
+      "rank": null,
+      "points": 2441,
+      "goalPct": null
+    },
+    {
+      "name": "MisterAndrey",
+      "rank": null,
+      "points": 2426,
+      "goalPct": null
+    },
+    {
+      "name": "Silviutza",
+      "rank": null,
+      "points": 2414,
+      "goalPct": null
+    },
+    {
+      "name": "gor3",
+      "rank": null,
+      "points": 2403,
+      "goalPct": null
+    },
+    {
+      "name": "Andreioty",
+      "rank": null,
+      "points": 2400,
+      "goalPct": null
+    },
+    {
+      "name": "xXxDarianxXx",
+      "rank": null,
+      "points": 2397,
+      "goalPct": null
+    },
+    {
+      "name": "Kamadeva",
+      "rank": null,
+      "points": 2394,
+      "goalPct": null
+    },
+    {
+      "name": "Stf90",
+      "rank": null,
+      "points": 2388,
+      "goalPct": null
+    },
+    {
+      "name": "VladTepesS",
+      "rank": null,
+      "points": 2368,
+      "goalPct": null
+    },
+    {
+      "name": "Galateanu",
+      "rank": null,
+      "points": 2359,
+      "goalPct": null
+    },
+    {
+      "name": "ROstefanRO",
+      "rank": null,
+      "points": 2351,
+      "goalPct": null
+    },
+    {
+      "name": "nikusor0506",
+      "rank": null,
+      "points": 2351,
+      "goalPct": null
+    },
+    {
+      "name": "heyhysaL",
+      "rank": null,
+      "points": 2342,
+      "goalPct": null
+    },
+    {
+      "name": "SuperPetrica",
+      "rank": null,
+      "points": 2326,
+      "goalPct": null
+    },
+    {
+      "name": "RacKu",
+      "rank": null,
+      "points": 2314,
+      "goalPct": null
+    },
+    {
+      "name": "Pixw",
+      "rank": null,
+      "points": 2301,
+      "goalPct": null
+    },
+    {
+      "name": "Neversea",
+      "rank": null,
+      "points": 2290,
+      "goalPct": null
+    },
+    {
+      "name": "Dan i el",
+      "rank": null,
+      "points": 2286,
+      "goalPct": null
+    },
+    {
+      "name": "WitcherMishu",
+      "rank": null,
+      "points": 2276,
+      "goalPct": null
+    },
+    {
+      "name": "St3fan",
+      "rank": null,
+      "points": 2263,
+      "goalPct": null
+    },
+    {
+      "name": "mPara",
+      "rank": null,
+      "points": 2255,
+      "goalPct": null
+    },
+    {
+      "name": "RightHereFor",
+      "rank": null,
+      "points": 2251,
+      "goalPct": null
+    },
+    {
+      "name": "Christian10x",
+      "rank": null,
+      "points": 2243,
+      "goalPct": null
+    },
+    {
+      "name": "sacalu20ro",
+      "rank": null,
+      "points": 2233,
+      "goalPct": null
+    },
+    {
+      "name": "ONNNU",
+      "rank": null,
+      "points": 2218,
+      "goalPct": null
+    },
+    {
+      "name": "CSAsergiu2",
+      "rank": null,
+      "points": 2209,
+      "goalPct": null
+    },
+    {
+      "name": "excesives",
+      "rank": null,
+      "points": 2208,
+      "goalPct": null
+    },
+    {
+      "name": "Nightwing333",
+      "rank": null,
+      "points": 2207,
+      "goalPct": null
+    },
+    {
+      "name": "Free kiIIs",
+      "rank": null,
+      "points": 2159,
+      "goalPct": null
+    },
+    {
+      "name": "Aditu",
+      "rank": null,
+      "points": 2159,
+      "goalPct": null
+    },
+    {
+      "name": "Nirel",
+      "rank": null,
+      "points": 2136,
+      "goalPct": null
+    },
+    {
+      "name": "Zarasahara",
+      "rank": null,
+      "points": 2136,
+      "goalPct": null
+    },
+    {
+      "name": "Garcea",
+      "rank": null,
+      "points": 2136,
+      "goalPct": null
+    },
+    {
+      "name": "n3mesis",
+      "rank": null,
+      "points": 2135,
+      "goalPct": null
+    },
+    {
+      "name": "3Dutu6",
+      "rank": null,
+      "points": 2105,
+      "goalPct": null
+    },
+    {
+      "name": "GoMoRrA89",
+      "rank": null,
+      "points": 2088,
+      "goalPct": null
+    },
+    {
+      "name": "eSuuu",
+      "rank": null,
+      "points": 2054,
+      "goalPct": null
+    },
+    {
+      "name": "Nick 502",
+      "rank": null,
+      "points": 2023,
+      "goalPct": null
+    },
+    {
+      "name": "ThaliaRhf",
+      "rank": null,
+      "points": 2017,
+      "goalPct": null
+    },
+    {
+      "name": "sStittchx",
+      "rank": null,
+      "points": 1971,
+      "goalPct": null
+    },
+    {
+      "name": "IUL1AN",
+      "rank": null,
+      "points": 1939,
+      "goalPct": null
+    },
+    {
+      "name": "E d i83",
+      "rank": null,
+      "points": 1918,
+      "goalPct": null
+    },
+    {
+      "name": "VIKING 1",
+      "rank": null,
+      "points": 1791,
+      "goalPct": null
+    },
+    {
+      "name": "s3b4",
+      "rank": null,
+      "points": 1732,
+      "goalPct": null
+    },
+    {
+      "name": "N e B r A",
+      "rank": null,
+      "points": 1728,
+      "goalPct": null
+    },
+    {
+      "name": "CIUPAQBRA RO",
+      "rank": null,
+      "points": 1637,
+      "goalPct": null
+    },
+    {
+      "name": "CrispyPoo",
+      "rank": null,
+      "points": 1635,
+      "goalPct": null
+    },
+    {
+      "name": "SevenSins700",
+      "rank": null,
+      "points": 1633,
+      "goalPct": null
+    },
+    {
+      "name": "Iuca",
+      "rank": null,
+      "points": 1605,
+      "goalPct": null
+    },
+    {
+      "name": "CIUPAQ MIHAI",
+      "rank": null,
+      "points": 1389,
+      "goalPct": null
+    },
+    {
+      "name": "SlySly",
+      "rank": null,
+      "points": 681,
+      "goalPct": null
+    },
+    {
+      "name": "Bogdan Ro",
+      "rank": null,
+      "points": 209,
+      "goalPct": null
+    },
+    {
+      "name": "Aly G",
+      "rank": null,
+      "points": 0,
+      "goalPct": null
+    }
+  ]
+}
