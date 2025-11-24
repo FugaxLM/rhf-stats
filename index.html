@@ -3,68 +3,236 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lords Mobile – Hunt Ranking</title>
+  <title>RHF – Weekly Stats</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="wrap">
     <div class="hero">
-      <h1>Lords Mobile – Hunt Ranking</h1>
-      <p class="muted">
-        Current week (auto-updates every hour from the bot).
+      <h1>RHF – Weekly Stats</h1>
+      <p class="muted" id="subtitle">
+        Auto-updates from bot exports.
       </p>
 
-      <div class="controls">
-        <input id="search" type="text" placeholder="Search player..." />
-        <select id="sort">
-          <option value="hunt">Sort by Hunt</option>
-          <option value="pointsHunt">Sort by Hunt points</option>
-          <option value="total">Sort by Total</option>
-          <option value="might">Sort by Might</option>
-          <option value="name">Sort by Name</option>
-        </select>
-        <button id="refresh">Refresh</button>
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="gift" role="tab">Hunt (Gifts)</button>
+        <button class="tab-btn" data-tab="kills" role="tab">Kills</button>
+        <button class="tab-btn" data-tab="fest" role="tab">Guild Fest</button>
+        <button class="tab-btn" data-tab="history" role="tab">History</button>
       </div>
-
-      <div id="meta" class="meta"></div>
-      <div id="staleWarn" class="muted small"></div>
     </div>
   </header>
 
   <main class="wrap">
-    <div id="loading" class="loading">Loading data...</div>
 
-    <div class="table-wrap hidden" id="tableWrap">
-      <div class="table-scroll">
-        <table id="table" class="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Player</th>
-              <th>Rank</th>
-              <th>Might</th>
-              <th>Total</th>
-              <th>Hunt</th>
-              <th>Points</th>
-              <th>L1</th>
-              <th>L2</th>
-              <th>L3</th>
-              <th>L4</th>
-              <th>L5</th>
-              <th>Goal %</th>
-            </tr>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
+    <!-- ========== GIFTS ========== -->
+    <section id="tab-gift" class="section">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Current week – Hunt (Gifts)</h2>
+          <div class="controls">
+            <input id="searchGift" type="text" placeholder="Search player..." />
+            <select id="sortGift">
+              <option value="pointsHunt">Sort by Hunt points</option>
+              <option value="hunt">Sort by Hunt count</option>
+              <option value="total">Sort by Total gifts</option>
+              <option value="purchase">Sort by Purchases</option>
+              <option value="name">Sort by Name</option>
+            </select>
+            <button id="refreshGift">Refresh</button>
+          </div>
+          <div id="metaGift" class="meta"></div>
+          <div id="staleWarnGift" class="muted small"></div>
+        </div>
+
+        <div id="loadingGift" class="loading">Loading Hunt data...</div>
+
+        <div class="table-wrap hidden" id="tableWrapGift">
+          <div class="table-scroll">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player</th>
+                  <th>Purch.</th>
+                  <th>Hunt</th>
+                  <th>Points</th>
+                  <th>L1</th>
+                  <th>L2</th>
+                  <th>L3</th>
+                  <th>L4</th>
+                  <th>L5</th>
+                  <th>Total</th>
+                  <th>Goal %</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyGift"></tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div id="error" class="error hidden"></div>
+      <div id="errorGift" class="error hidden"></div>
+    </section>
+
+    <!-- ========== KILLS ========== -->
+    <section id="tab-kills" class="section hidden">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Current week – Kills</h2>
+          <div class="controls">
+            <input id="searchKills" type="text" placeholder="Search player..." />
+            <select id="sortKills">
+              <option value="killsThisWeek">Sort by Weekly kills</option>
+              <option value="oldKills">Sort by Old kills</option>
+              <option value="totalKills">Sort by Total kills</option>
+              <option value="name">Sort by Name</option>
+            </select>
+            <button id="refreshKills">Refresh</button>
+          </div>
+          <div id="metaKills" class="meta"></div>
+          <div id="staleWarnKills" class="muted small"></div>
+        </div>
+
+        <div id="loadingKills" class="loading">Loading Kills data...</div>
+
+        <div class="table-wrap hidden" id="tableWrapKills">
+          <div class="table-scroll">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player</th>
+                  <th>Kills this week</th>
+                  <th>Total kills</th>
+                  <th>Old kills</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyKills"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="errorKills" class="error hidden"></div>
+    </section>
+
+    <!-- ========== GUILD FEST ========== -->
+    <section id="tab-fest" class="section hidden">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Latest Guild Fest</h2>
+          <div class="controls">
+            <input id="searchFest" type="text" placeholder="Search player..." />
+            <select id="sortFest">
+              <option value="points">Sort by Points</option>
+              <option value="rank">Sort by Rank</option>
+              <option value="name">Sort by Name</option>
+            </select>
+            <button id="refreshFest">Refresh</button>
+          </div>
+          <div id="metaFest" class="meta"></div>
+          <div id="staleWarnFest" class="muted small"></div>
+        </div>
+
+        <div id="loadingFest" class="loading">Loading Guild Fest data...</div>
+
+        <div class="table-wrap hidden" id="tableWrapFest">
+          <div class="table-scroll">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player</th>
+                  <th>Points</th>
+                  <th>Rank</th>
+                  <th>Goal %</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyFest"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="errorFest" class="error hidden"></div>
+    </section>
+
+    <!-- ========== HISTORY ========== -->
+    <section id="tab-history" class="section hidden">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>History</h2>
+          <p class="muted small">
+            Select a past week (Tue → Mon). If files don’t exist yet, it will show “not found”.
+          </p>
+
+          <div class="controls history-controls">
+            <select id="historyWeek"></select>
+            <button id="loadHistory">Load week</button>
+          </div>
+
+          <div id="metaHistory" class="meta"></div>
+        </div>
+
+        <div class="history-grid">
+
+          <div class="history-block">
+            <h3>Hunt (Gifts)</h3>
+            <div id="loadingHistoryGift" class="loading small">Choose a week…</div>
+            <div class="table-wrap hidden" id="tableWrapHistoryGift">
+              <div class="table-scroll">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Purch.</th>
+                    <th>Hunt</th>
+                    <th>Points</th>
+                    <th>L1</th><th>L2</th><th>L3</th><th>L4</th><th>L5</th>
+                    <th>Total</th>
+                    <th>Goal %</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbodyHistoryGift"></tbody>
+                </table>
+              </div>
+            </div>
+            <div id="errorHistoryGift" class="error hidden"></div>
+          </div>
+
+          <div class="history-block">
+            <h3>Kills</h3>
+            <div id="loadingHistoryKills" class="loading small">Choose a week…</div>
+            <div class="table-wrap hidden" id="tableWrapHistoryKills">
+              <div class="table-scroll">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Kills this week</th>
+                    <th>Total kills</th>
+                    <th>Old kills</th>
+                  </tr>
+                  </thead>
+                  <tbody id="tbodyHistoryKills"></tbody>
+                </table>
+              </div>
+            </div>
+            <div id="errorHistoryKills" class="error hidden"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="wrap muted small">
-    Made for the guild. If something looks wrong, tell excesives 🙂
+    Made for RHF. If something looks wrong, tell excesives 🙂
   </footer>
 
   <script src="app.js"></script>
