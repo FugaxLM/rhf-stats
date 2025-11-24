@@ -1,21 +1,12 @@
 {
-  "generatedAt": "test",
+  "generatedAt": "2025-11-24T20:18:35",
   "weekStart": "2025-11-24",
   "weekEnd": "2025-11-30",
-  "players": [
-    {
-      "name": "TestPlayer",
-      "rank": "RANK5",
-      "l1": 1,
-      "l2": 2,
-      "l3": 3,
-      "l4": 4,
-      "l5": 5,
-      "purchase": 1,
-      "hunt": 15,
-      "total": 16,
-      "pointsHunt": 20,
-      "goalPctHunt": 0.5
-    }
-  ]
+  "note": "No Tuesday export yet. Current week starts when Tuesday 00:00 file exists.",
+  "source": {
+    "giftFilesUsed": [],
+    "windowStart": "2025-11-25T00:00",
+    "windowEnd": "2025-12-01T00:05"
+  },
+  "players": []
 }
