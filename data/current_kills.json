@@ -1,92 +1,165 @@
 {
-  "generatedAt": "2025-11-27T05:07:17",
+  "generatedAt": "2025-11-28T05:07:17",
   "weekStart": "2025-11-24",
   "weekEnd": "2025-11-30",
   "source": {
     "listFilesUsed": [
-      "2025-11-27 00.01 GUILD_LIST RhF.xlsx"
+      "2025-11-27 00.01 GUILD_LIST RhF.xlsx",
+      "2025-11-28 00.00 GUILD_LIST RhF.xlsx"
     ],
     "windowStart": "2025-11-25T00:00",
     "windowEnd": "2025-12-01T00:05"
   },
   "players": [
     {
+      "name": "CIUPAQ MIHAI",
+      "totalKills": 1584546031,
+      "oldKills": 1580293048,
+      "killsThisWeek": 4252983
+    },
+    {
+      "name": "Big zoro",
+      "totalKills": 369293145,
+      "oldKills": 367242623,
+      "killsThisWeek": 2316804
+    },
+    {
       "name": "nikusor0506",
       "totalKills": 181039329,
-      "oldKills": 179616262,
+      "oldKills": 181039329,
       "killsThisWeek": 1423067
     },
     {
+      "name": "XMariusX0034",
+      "totalKills": 813376337,
+      "oldKills": 813126329,
+      "killsThisWeek": 755585
+    },
+    {
       "name": "Mihai 2017",
-      "totalKills": 1297945765,
-      "oldKills": 1297199208,
-      "killsThisWeek": 746557
+      "totalKills": 1297946572,
+      "oldKills": 1297945765,
+      "killsThisWeek": 747364
     },
     {
       "name": "motanel004",
       "totalKills": 1750206778,
-      "oldKills": 1749686032,
+      "oldKills": 1750206778,
       "killsThisWeek": 520746
     },
     {
       "name": "GoMoRrA89",
       "totalKills": 277142239,
-      "oldKills": 276626549,
+      "oldKills": 277142239,
       "killsThisWeek": 515690
     },
     {
       "name": "bgdbgd",
       "totalKills": 1066971473,
-      "oldKills": 1066455783,
+      "oldKills": 1066971473,
       "killsThisWeek": 515690
     },
     {
       "name": "jaspal 92",
       "totalKills": 210379249,
-      "oldKills": 209867603,
+      "oldKills": 210379249,
       "killsThisWeek": 511646
     },
     {
       "name": "Luckian",
       "totalKills": 278265731,
-      "oldKills": 277755098,
+      "oldKills": 278265731,
       "killsThisWeek": 510633
     },
     {
-      "name": "XMariusX0034",
-      "totalKills": 813126329,
-      "oldKills": 812620752,
-      "killsThisWeek": 505577
+      "name": "MisterAndrey",
+      "totalKills": 3476772796,
+      "oldKills": 3476515289,
+      "killsThisWeek": 257507
     },
     {
-      "name": "Big zoro",
-      "totalKills": 367242623,
-      "oldKills": 366976341,
-      "killsThisWeek": 266282
+      "name": "VIKING 1",
+      "totalKills": 174369985,
+      "oldKills": 174113982,
+      "killsThisWeek": 256003
+    },
+    {
+      "name": "Faby0032",
+      "totalKills": 118365941,
+      "oldKills": 118110935,
+      "killsThisWeek": 255006
+    },
+    {
+      "name": "Neversea",
+      "totalKills": 1412114432,
+      "oldKills": 1411859426,
+      "killsThisWeek": 255006
+    },
+    {
+      "name": "CIUPAQBRA RO",
+      "totalKills": 694375226,
+      "oldKills": 694122721,
+      "killsThisWeek": 252505
+    },
+    {
+      "name": "iulicu2010",
+      "totalKills": 462796837,
+      "oldKills": 462544332,
+      "killsThisWeek": 252505
     },
     {
       "name": "BlackBlade A",
       "totalKills": 1432945263,
-      "oldKills": 1432692764,
+      "oldKills": 1432945263,
       "killsThisWeek": 252499
+    },
+    {
+      "name": "ylyeiii",
+      "totalKills": 816790910,
+      "oldKills": 816576749,
+      "killsThisWeek": 214161
     },
     {
       "name": "XxAnub1sxX",
       "totalKills": 1028139136,
-      "oldKills": 1027958475,
+      "oldKills": 1028139136,
       "killsThisWeek": 180661
     },
     {
-      "name": "eSuuu",
-      "totalKills": 1656966924,
-      "oldKills": 1656953762,
-      "killsThisWeek": 13162
+      "name": "N e B r A",
+      "totalKills": 1156330188,
+      "oldKills": 1156260483,
+      "killsThisWeek": 70505
     },
     {
-      "name": "N e B r A",
-      "totalKills": 1156260483,
-      "oldKills": 1156259683,
-      "killsThisWeek": 800
+      "name": "CupidANIEL",
+      "totalKills": 744439543,
+      "oldKills": 744375515,
+      "killsThisWeek": 64028
+    },
+    {
+      "name": "ImCro",
+      "totalKills": 1030693490,
+      "oldKills": 1030670098,
+      "killsThisWeek": 23392
+    },
+    {
+      "name": "eSuuu",
+      "totalKills": 1656967724,
+      "oldKills": 1656966924,
+      "killsThisWeek": 13962
+    },
+    {
+      "name": "Stf90",
+      "totalKills": 1463228164,
+      "oldKills": 1463220581,
+      "killsThisWeek": 7583
+    },
+    {
+      "name": "FisherAdy80",
+      "totalKills": 1192233817,
+      "oldKills": 1192232217,
+      "killsThisWeek": 1600
     },
     {
       "name": "0Rode0",
@@ -143,18 +216,6 @@
       "killsThisWeek": 0
     },
     {
-      "name": "CIUPAQ MIHAI",
-      "totalKills": 1580293048,
-      "oldKills": 1580293048,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "CIUPAQBRA RO",
-      "totalKills": 694122721,
-      "oldKills": 0,
-      "killsThisWeek": 0
-    },
-    {
       "name": "CSAsergiu2",
       "totalKills": 567007934,
       "oldKills": 567007934,
@@ -170,12 +231,6 @@
       "name": "CrispyPoo",
       "totalKills": 336940504,
       "oldKills": 336940504,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "CupidANIEL",
-      "totalKills": 744375515,
-      "oldKills": 744375515,
       "killsThisWeek": 0
     },
     {
@@ -203,15 +258,9 @@
       "killsThisWeek": 0
     },
     {
-      "name": "Faby0032",
-      "totalKills": 118110935,
-      "oldKills": 118110935,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "FisherAdy80",
-      "totalKills": 1192232217,
-      "oldKills": 1192232217,
+      "name": "E d i83",
+      "totalKills": 992432885,
+      "oldKills": 0,
       "killsThisWeek": 0
     },
     {
@@ -242,12 +291,6 @@
       "name": "IUL1AN",
       "totalKills": 797836001,
       "oldKills": 797836001,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "ImCro",
-      "totalKills": 1030670098,
-      "oldKills": 1030670098,
       "killsThisWeek": 0
     },
     {
@@ -287,21 +330,9 @@
       "killsThisWeek": 0
     },
     {
-      "name": "MisterAndrey",
-      "totalKills": 3476515289,
-      "oldKills": 3476515289,
-      "killsThisWeek": 0
-    },
-    {
       "name": "Mortier81mm",
       "totalKills": 1320421353,
       "oldKills": 1320421353,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "Neversea",
-      "totalKills": 1411859426,
-      "oldKills": 1411859426,
       "killsThisWeek": 0
     },
     {
@@ -407,12 +438,6 @@
       "killsThisWeek": 0
     },
     {
-      "name": "Stf90",
-      "totalKills": 1463220581,
-      "oldKills": 1463220581,
-      "killsThisWeek": 0
-    },
-    {
       "name": "Super Bad",
       "totalKills": 2333169285,
       "oldKills": 2333169285,
@@ -440,12 +465,6 @@
       "name": "ThePwnzrox",
       "totalKills": 962990579,
       "oldKills": 962990579,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "VIKING 1",
-      "totalKills": 174113982,
-      "oldKills": 174113982,
       "killsThisWeek": 0
     },
     {
@@ -497,15 +516,15 @@
       "killsThisWeek": 0
     },
     {
-      "name": "iulicu2010",
-      "totalKills": 462544332,
-      "oldKills": 462544332,
-      "killsThisWeek": 0
-    },
-    {
       "name": "lord zoro",
       "totalKills": 8250368,
       "oldKills": 8250368,
+      "killsThisWeek": 0
+    },
+    {
+      "name": "lungu",
+      "totalKills": 2649878177,
+      "oldKills": 0,
       "killsThisWeek": 0
     },
     {
@@ -554,12 +573,6 @@
       "name": "xXxDarianxXx",
       "totalKills": 277603299,
       "oldKills": 277603299,
-      "killsThisWeek": 0
-    },
-    {
-      "name": "ylyeiii",
-      "totalKills": 816576749,
-      "oldKills": 0,
       "killsThisWeek": 0
     }
   ]
